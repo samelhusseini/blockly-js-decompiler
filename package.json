@@ -27,7 +27,7 @@
     "test:web:install": "cd demos/web && npm i",
     "test:web": "cd demos/web && npm run start",
     "build": "cd demos/web && npm run build",
-    "deploy": ""
+    "deploy": "node deploy.js"
   },
   "dependencies": {
     "typescript": "^3.6.4"
@@ -36,7 +36,8 @@
     "blockly": "^3.20191014.1"
   },
   "devDependencies": {
-    "blockly": "^3.20191014.1"
+    "blockly": "^3.20191014.1",
+    "gh-pages": "^2.1.1"
   },
   "files": [
     "src/index.js"

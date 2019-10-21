@@ -16,7 +16,7 @@
  */
 
 /**
- * @fileoverview Decompiling JavaScript into math blocks.
+ * @fileoverview Call statement registry.
  * @author samelh@google.com (Sam El-Husseini)
  */
 'use strict';
