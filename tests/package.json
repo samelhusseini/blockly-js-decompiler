@@ -1,0 +1,11 @@
+{
+  "name": "@blockly-js-decompiler/tests",
+  "scripts": {
+    "start": "node testrunner.js"
+  },
+  "dependencies": {
+    "blockly": "^3.20191014.1",
+    "blockly-js-decompiler": "file:../"
+  },
+  "devDependencies": {}
+}

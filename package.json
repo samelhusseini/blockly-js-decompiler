@@ -1,0 +1,44 @@
+{
+  "name": "blockly-js-decompiler",
+  "version": "0.0.1",
+  "description": "A JavaScript code to Blockly decompiler.",
+  "keywords": [
+    "blockly",
+    "javascript",
+    "decompiler"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samelhusseini/blockly-js-decompiler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samelhusseini/blockly-js-decompiler/issues"
+  },
+  "homepage": "https://github.com/samelhusseini/blockly-js-decompiler/",
+  "author": {
+    "name": "Sam El-Husseini"
+  },
+  "license": "Apache-2.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "cd tests && npm i && npm run start",
+    "test:node:install": "cd demos/node && npm i",
+    "test:node": "node demos/node/node.js",
+    "test:web:install": "cd demos/web && npm i",
+    "test:web": "cd demos/web && npm run start",
+    "build": "cd demos/web && npm run build",
+    "deploy": ""
+  },
+  "dependencies": {
+    "typescript": "^3.6.4"
+  },
+  "peerDependencies": {
+    "blockly": "^3.20191014.1"
+  },
+  "devDependencies": {
+    "blockly": "^3.20191014.1"
+  },
+  "files": [
+    "src/index.js"
+  ]
+}

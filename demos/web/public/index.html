@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Blockly Decompiler</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+
+    #blocklyDiv {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+      padding: 1rem;
+    }
+
+    #container {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+    }
+
+    .blocklyMainBackground {
+      stroke: transparent;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="container"></div>
+  <div id='blocklyDiv'></div>
+
+  <script type='text/javascript' src='./app.bundle.js'></script>
+
+</body>
+
+</html>
