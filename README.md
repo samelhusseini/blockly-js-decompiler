@@ -1,7 +1,9 @@
 # blockly-js-decompiler
 
-Javascript to Blockly decompiler.
+A Javascript to Blockly decompiler.
 
+Note: This decompiler is not complete, and is intended as a showcase of how to
+use decompile JavaScript code to Blockly blocks.
 
 ## Installation
 
