@@ -18,3 +18,13 @@ decompile(workspace, code);
 
 ```
 
+## How it works
+
+This decompiler works in two steps. First it uses the TypeScript compiler to
+create an AST from the JavaScript code.
+Once we have an AST, we're able to traverse the AST, creating Blockly blocks
+along the way.
+
+## License
+
+Apache 2.0
