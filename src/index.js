@@ -591,8 +591,7 @@ function decompile(workspace, code) {
         var variableNode = /** @type {ts.VariableStatement} */ (node);
         return getBlock(variableNode.declarationList.declarations);
       case SK.ExpressionStatement:
-        node.forEachChild(getStatementBlock);
-        break;
+        return getBlock(node.getChildren());
       case SK.WhileStatement:
         return getWhileStatement(node);
       case SK.ForStatement:

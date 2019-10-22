@@ -22,10 +22,10 @@
   "main": "src/index.js",
   "scripts": {
     "test": "cd tests && npm i && npm run start",
-    "test:node:install": "cd demos/node && npm i",
-    "test:node": "node demos/node/node.js",
-    "test:web:install": "cd demos/web && npm i",
-    "test:web": "cd demos/web && npm run start",
+    "demo:node:install": "cd demos/node && npm i",
+    "demo:node": "node demos/node/node.js",
+    "demo:web:install": "cd demos/web && npm i",
+    "demo:web": "cd demos/web && npm run start",
     "build": "cd demos/web && npm run build",
     "deploy": "node deploy.js"
   },
