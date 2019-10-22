@@ -27,7 +27,7 @@
     "demo:web:install": "cd demos/web && npm i",
     "demo:web": "cd demos/web && npm run start",
     "build": "cd demos/web && npm run build",
-    "deploy": "node deploy.js"
+    "deploy": "npm run build && node deploy.js"
   },
   "dependencies": {
     "typescript": "^3.6.4"
