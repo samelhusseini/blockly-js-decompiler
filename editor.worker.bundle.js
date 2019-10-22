@@ -363,7 +363,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*! ModuleConcatenation bailout: Cannot concat with ./node_modules/monaco-editor/esm/vs/base/common/strings.js because of ./node_modules/monaco-editor/esm/vs/editor/standalone/browser/quickOpen/quickCommand.js */
 /*! ModuleConcatenation bailout: Cannot concat with ./node_modules/monaco-editor/esm/vs/base/common/types.js because of ./node_modules/monaco-editor/esm/vs/editor/editor.worker.js */
 /*! ModuleConcatenation bailout: Cannot concat with ./node_modules/monaco-editor/esm/vs/base/common/uri.js because of ./node_modules/monaco-editor/esm/vs/editor/editor.api.js */
-/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/monaco-editor/esm/vs/editor/common/core/characterClassifier.js because of ./node_modules/monaco-editor/esm/vs/editor/common/controller/wordCharacterClassifier.js */
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/monaco-editor/esm/vs/editor/common/core/characterClassifier.js because of ./node_modules/monaco-editor/esm/vs/editor/common/viewModel/characterHardWrappingLineMapper.js */
 /*! ModuleConcatenation bailout: Cannot concat with ./node_modules/monaco-editor/esm/vs/editor/common/core/position.js because of ./node_modules/monaco-editor/esm/vs/editor/editor.api.js */
 /*! ModuleConcatenation bailout: Cannot concat with ./node_modules/monaco-editor/esm/vs/editor/common/core/range.js because of ./node_modules/monaco-editor/esm/vs/editor/editor.api.js */
 /*! ModuleConcatenation bailout: Cannot concat with ./node_modules/monaco-editor/esm/vs/editor/common/core/uint.js because of ./node_modules/monaco-editor/esm/vs/editor/common/viewModel/characterHardWrappingLineMapper.js */
