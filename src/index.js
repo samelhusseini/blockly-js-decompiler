@@ -58,7 +58,8 @@ function decompile(workspace, code) {
     var input = block.getInput(inputName);
     if (input) {
       // Check that we can connect.
-      if (input.connection.isConnectionAllowed(otherConnection)) {
+      if (otherConnection &&
+          input.connection.isConnectionAllowed(otherConnection)) {
         input.connection.connect(otherConnection);
         return true;
       } else {
@@ -67,9 +68,11 @@ function decompile(workspace, code) {
     } else {
       console.warn(`No ${inputName} input on block ${block.type}`);
     }
-    // Remove the other block.
-    var otherBlock = otherConnection.getSourceBlock();
-    otherBlock.dispose();
+    if (otherConnection) {
+      // Remove the other block.
+      var otherBlock = otherConnection.getSourceBlock();
+      otherBlock.dispose();
+    }
 
     return false;
   }
@@ -475,7 +478,8 @@ function decompile(workspace, code) {
     }
     previousTopNode = node;
     var topBlock = getStatementBlock(node);
-    if (previousTopBlock && topBlock && shouldConnectBlocks) {
+    if (previousTopBlock && topBlock && previousTopBlock.nextConnection &&
+      topBlock.previousConnection && shouldConnectBlocks) {
       // Connect blocks.
       previousTopBlock.nextConnection.connect(topBlock.previousConnection);
     }

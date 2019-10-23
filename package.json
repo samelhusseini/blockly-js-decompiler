@@ -26,6 +26,7 @@
     "demo:node": "node demos/node/node.js",
     "demo:web:install": "cd demos/web && npm i",
     "demo:web": "cd demos/web && npm run start",
+    "start": "npm run demo:web",
     "build": "cd demos/web && npm run build",
     "deploy": "npm run build && node deploy.js"
   },
